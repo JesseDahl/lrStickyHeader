@@ -89,7 +89,8 @@
 
             function actualResizeHandler() {
                 var firstRow = that.tbody.getElementsByTagName('TR')[0];
-                var trh = that.thead.getElementsByTagName('TR')[0];
+                var trs = that.thead.getElementsByTagName('TR');
+                var trh = trs[trs.length - 1];
                 var firstTds;
                 var firstThs;
 
